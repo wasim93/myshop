@@ -1,5 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import chalk from 'chalk';
 import connectDB from './config/db.js';
 import products from './data/products.js';
 
@@ -26,6 +27,7 @@ const PORT = process.env.PORT || 5000;
 app.listen(
   PORT,
   console.log(
-    `Server is running in ${process.env.NODE_ENV} MODE on port ${PORT}`
+    chalk.yellow
+      .bold`Server is running in ${process.env.NODE_ENV} MODE on port ${PORT}`
   )
 );

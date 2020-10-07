@@ -1,3 +1,4 @@
+import chalk from 'chalk';
 import mongoose from 'mongoose';
 
 const connectDB = async () => {
@@ -8,9 +9,9 @@ const connectDB = async () => {
       useCreateIndex: true,
     });
 
-    console.log(`MongoDB Connected: ${conn.connection.host}`);
+    console.log(chalk.blue.bold`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
-    console.error(`Error: ${error.message}`);
+    console.error(chalk.red.bold.underline`Error: ${error.message}`);
     process.exit(1);
   }
 };
