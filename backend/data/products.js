@@ -31,7 +31,7 @@ const products = [
     brand: 'Cannon',
     category: 'Electronics',
     price: 929.99,
-    countInStock: 5,
+    countInStock: 3,
     rating: 2.5,
     numReviews: 10,
   },
