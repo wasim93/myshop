@@ -5,7 +5,19 @@ main {
 h3 {
   padding: 1rem 0;
 }
+h1 {
+  font-size: 1.8rem;
+  padding: 1 rem 0;
+}
+h1 {
+  font-size: 1.4rem;
+  padding: 0.5 rem 0;
+}
 
 .rating span {
   margin: 0.1 rem;
+}
+
+.backInMessage {
+  text-decoration: underline;
 }
