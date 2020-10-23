@@ -5,7 +5,7 @@ import Product from '../components/Product';
 import Loader from '../components/Loader';
 import Message from '../components/Message';
 import { listProducts } from '../actions/productActions';
-import { productListReducer } from '../reducers/productReducers';
+// import { productListReducer } from '../reducers/productReducers';
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
