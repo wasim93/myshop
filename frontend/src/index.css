@@ -1,5 +1,6 @@
 main {
   min-height: 80vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 h3 {
@@ -20,4 +21,8 @@ h1 {
 
 .backInMessage {
   text-decoration: underline;
+}
+
+.b {
+  font-weight: bold !important;
 }
