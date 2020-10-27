@@ -8,56 +8,40 @@ const CheckoutSteps = ({ step1, step2, step3, step4 }) => {
       <Nav.Item>
         {step1 ? (
           <LinkContainer to='/login'>
-            <Nav.Link>
-              <span className='b'>Sign In </span>
-            </Nav.Link>
+            <Nav.Link>Sign In</Nav.Link>
           </LinkContainer>
         ) : (
-          <Nav.Link disabled>
-            <span className='b'>Sign In </span>
-          </Nav.Link>
+          <Nav.Link disabled>Sign In</Nav.Link>
         )}
       </Nav.Item>
 
       <Nav.Item>
         {step2 ? (
           <LinkContainer to='/shipping'>
-            <Nav.Link>
-              <span className='b'>Shipping </span>
-            </Nav.Link>
+            <Nav.Link>Shipping</Nav.Link>
           </LinkContainer>
         ) : (
-          <Nav.Link disabled>
-            <span className='b'>Shipping </span>
-          </Nav.Link>
+          <Nav.Link disabled>Shipping</Nav.Link>
         )}
       </Nav.Item>
 
       <Nav.Item>
         {step3 ? (
           <LinkContainer to='/payment'>
-            <Nav.Link>
-              <span className='b'>Payment </span>
-            </Nav.Link>
+            <Nav.Link>Payment</Nav.Link>
           </LinkContainer>
         ) : (
-          <Nav.Link disabled>
-            <span className='b'>Payment </span>
-          </Nav.Link>
+          <Nav.Link disabled>Payment</Nav.Link>
         )}
       </Nav.Item>
 
       <Nav.Item>
         {step4 ? (
           <LinkContainer to='/placeorder'>
-            <Nav.Link>
-              <span className='b'>Place Order </span>
-            </Nav.Link>
+            <Nav.Link>Place Order</Nav.Link>
           </LinkContainer>
         ) : (
-          <Nav.Link disabled>
-            <span className='b'>Place Order </span>
-          </Nav.Link>
+          <Nav.Link disabled>Place Order</Nav.Link>
         )}
       </Nav.Item>
     </Nav>
