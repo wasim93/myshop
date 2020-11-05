@@ -71,6 +71,30 @@ const products = [
     rating: 4,
     numReviews: 14,
   },
+  {
+    name: 'Iphone 12 Pro 512GB Memory',
+    image: '/images/iphone12.png',
+    description:
+      'Introducing the iPhone 12 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
+    brand: 'Apple',
+    category: 'Electronics',
+    price: 1199.99,
+    countInStock: 70,
+    rating: 4.5,
+    numReviews: 29,
+  },
+  {
+    name: 'Tesla Roadster',
+    image: '/images/tesla-roadster.jpg',
+    description:
+      'Introducing the Beast. A transformative electronic systems of capability without complexity. An unprecedented leap in battery life',
+    brand: 'Tesla',
+    category: 'Autos',
+    price: 1500000,
+    countInStock: 700,
+    rating: 5.0,
+    numReviews: 290,
+  },
 ];
 
 export default products;
