@@ -85,7 +85,7 @@ const products = [
   },
   {
     name: 'Tesla Roadster',
-    image: '/images/tesla-roadster.jpg',
+    image: '/images/tesla-roadster.png',
     description:
       'Introducing the Beast. A transformative electronic systems of capability without complexity. An unprecedented leap in battery life',
     brand: 'Tesla',
