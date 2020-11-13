@@ -26,3 +26,7 @@ h1 {
 .b {
   font-weight: bold !important;
 }
+
+.myCard {
+  min-height: 400px;
+}
