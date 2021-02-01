@@ -79,7 +79,7 @@ npm run data:destroy
 
 ```
 Sample User Logins
-admin@example.com (Admin)
+wasim@seersol.com (Admin)
 123456
 john@example.com (Customer)
 123456
@@ -91,7 +91,6 @@ jane@example.com (Customer)
 
 The MIT License
 
-Copyright (c) 2020 Traversy Media https://traversymedia.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
