@@ -19,7 +19,24 @@ const app = express();
 app.use(express.json());
 
 if (process.env.NODE_ENV === 'DEVELOPMENT') {
-  app.use(morgan('dev'));
+  app.use(
+    morgan(function (tokens, req, res) {
+      // var LocalDateTime = new Date(tokens.date(req, res));
+      // LocalDateTime.toString(); // "Wed Jun 29 2011 09:52:48 GMT-0700 (PST)"
+
+      return (
+        chalk.blue.bold(tokens.method(req, res)) +
+        ' ' +
+        chalk.green.bold(tokens.url(req, res)) +
+        ' ' +
+        chalk.red(tokens['response-time'](req, res)) +
+        ' ' +
+        chalk.magenta(tokens.date(req, res))
+        // chalk.magenta(LocalDateTime)
+      );
+    })
+  );
+  // app.use(morgan('dev'));
 }
 
 app.use('/api/products', productRoutes);
@@ -30,7 +47,7 @@ app.use('/api/upload', uploadRoutes);
 const __dirname = path.resolve();
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'PRODUCTION') {
   app.use(express.static(path.join(__dirname, '/frontend/build')));
 
   app.get('*', (req, res) =>
